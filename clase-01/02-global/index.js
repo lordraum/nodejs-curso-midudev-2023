@@ -1,8 +1,8 @@
 // globalThis
 
-// globalThis Onjeto global de todos los entornos js (navegador, node, etc)
-    // navegador => window
-    // node => global
+// globalThis Objeto global de todos los entornos js (navegador, node, etc)
+// navegador => window
+// node => global
 
 console.log(globalThis)
 

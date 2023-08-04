@@ -3,7 +3,7 @@ const path = require('node:path')
 const pc = require('picocolors')
 const folder = process.argv[2] ?? '.'
 
-async function ls(folder) {
+async function ls (folder) {
   let files
   try {
     files = await fs.readdir(folder)
@@ -37,3 +37,17 @@ async function ls(folder) {
 }
 
 ls(folder)
+
+// Pasos
+
+// Import => fs, path, picocolors
+
+// Variable folder => process.argv[2]
+
+// Función async ls => param => folder
+// Variable para la carpeta
+// => try catch
+// => try leer carpeta => fs, catch => error, salir
+
+// Imprimir archivos de la carpeta con la información requerida => es directorio, tipo de archivo, tamaño, modificado
+// map async

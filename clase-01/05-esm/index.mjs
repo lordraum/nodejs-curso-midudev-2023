@@ -3,7 +3,7 @@
 // exportar => export / export default
 // importar => import { foo } from 'PATH'
 
-import { sum, sub, mult } from "./sum.mjs";
+import { sum, sub, mult } from './sum.mjs'
 
 const numbers = [4, 7]
 
@@ -11,4 +11,4 @@ console.log(sum(numbers[0], numbers[1]))
 console.log(sub(numbers[0], numbers[1]))
 console.log(mult(numbers[0], numbers[1]))
 
-// ESM es el módulo aconsejado a utilizar a día de hoy
+// ESM es el módulo aconsejado para utilizar en nodejs a día de hoy

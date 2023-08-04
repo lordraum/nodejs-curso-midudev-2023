@@ -23,3 +23,15 @@ function findAvailablePort (desiredPort) {
 }
 
 module.exports = { findAvailablePort }
+
+// Pasos
+
+// Importar net
+
+// Crear función para verificar puerto
+// => promesa => res, rej
+// => Crear server => Escuchar => Cerrar server => resolve port (devolver puerto)
+
+// Escuchar evento error en el servidor
+// Error Puerto en uso => Ejecutar función(0) => resolver puerto
+// => reject err

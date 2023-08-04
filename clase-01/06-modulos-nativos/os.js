@@ -10,11 +10,6 @@ console.log('SO', os.platform())
 console.log('SO Version', os.release())
 console.log('Arquitectura', os.arch())
 console.log("CPU's", os.cpus())
-console.log("memoria libre", os.freemem() / 1024 / 1024)
-console.log("memoria total", os.totalmem() / 1024 / 1024)
-console.log("tiempo encendido", os.uptime() / 60 / 60)
-
-// fs => filesystem => 
-
-const fs = require('node:fs')
-
+console.log('memoria libre', os.freemem() / 1024 / 1024)
+console.log('memoria total', os.totalmem() / 1024 / 1024)
+console.log('tiempo encendido', os.uptime() / 60 / 60)

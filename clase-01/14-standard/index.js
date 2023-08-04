@@ -6,13 +6,5 @@
     "eslintConfig": {
     "extends": "standard"
   }
-*/
-// Autocorrección
-/* VsCode settings.json
-"[javascript]": {
-        "editor.formatOnSave": true,
-    },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-*/
+ */
+// => Activar el format on save en VsCode

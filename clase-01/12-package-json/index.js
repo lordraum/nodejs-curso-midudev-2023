@@ -8,6 +8,7 @@
 } */
 
 // Recomendación => Eliminar el caret ^ (alt+94) si la dependencia lo posee para que no se actualice automáticamente
+// Instalar dependencia sin el caret ^ => npm i module -E
 // Utilizar extensión version lens para administrar las dependencias
 
 // node-modules
@@ -17,8 +18,9 @@
 
 // Dependencias de producción
 // Se necesita para que la app funcione en cualquier entorno (despliegue)
+// No requiere flag para instalar
 
 // Dependencias de desarrollo
 // Solo se necesita para realizar la app
-// aparecen en el package.json como devDepenedencies
+// aparecen en el package.json como devDependencies
 // Instalar => install module -D
