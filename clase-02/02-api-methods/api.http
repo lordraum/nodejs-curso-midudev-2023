@@ -1,0 +1,19 @@
+### Acceder a la info del pokemon ditto
+GET http://localhost:3000/pokemon/ditto
+### Acceder a la home
+GET http://localhost:3000
+### Probando el error
+GET http://localhost:3000/error
+### Crear pokemon
+POST http://localhost:3000/pokemon
+Content-Type: application/json
+
+{
+  "name": "ditto",
+  "type": "normal",
+  "moves": [
+      "transform"
+  ]
+}
+
+
