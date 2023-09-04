@@ -2,6 +2,8 @@
 [ ] Promise.all
 [ ] IIFE función autoinvocada
 [ ] Tipos de asincronía
+[ ] Librería path-to-regexp
+[ ] Query strings
 
 ## Repasar
 [ ] async await
