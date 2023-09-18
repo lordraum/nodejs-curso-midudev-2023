@@ -72,3 +72,7 @@ app.listen(PORT, () => console.log(`Aplicación lanzada en http://localhost:${PO
 // Las variables de entorno siempre son en mayúscula
 
 // Hacer commit y push
+
+// En Fl0
+// Deploy code with github
+// Escoger repositorio => Deploy

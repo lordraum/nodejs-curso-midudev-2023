@@ -2,7 +2,7 @@ const express = require('express')
 const crypto = require('node:crypto')
 const movies = require('./movies.json')
 const app = express()
-const { validateMovie, validatePartialMovie } = require('./schemas/movies')
+const { validateMovie, validatePartialMovie } = require('./schemas/movies.js')
 const PORT = process.env.PORT ?? 3000
 
 app.disable('x-powered-by')

@@ -1,0 +1,5 @@
+¿Cuál es el objeto global de todos los entornos js (naveador, node, etc)?: globalThis
+El patrón de diseño {{c1::módulo}} separa la aplicación en diferentes partes que se usarán por medio de importación y exportación.
+Extensiones de archivos de CJS y ESM: cjs | mjs
+Importar módulo fs (filesystem): import fs from 'node:fs'
+

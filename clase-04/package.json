@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch 01-cors/index"
+    "dev": "node --watch 02-modularizar/index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cors": "^2.8.5",
     "standard": "17.1.0"
   },
   "dependencies": {
