@@ -1,9 +1,9 @@
 const { readFile } = require('node:fs/promises')
 
-// esm => se puede utilizar async await de forma tradicional, es decir, en el cuerpo del archivo (top level await)
+// Se puede utilizar async await con una función autoinvocada (IIFE => Inmediately Invocated Function Expression)
 
-// cjs => Se puede utilizar async await con una función autoinvocada (IIFE => Inmediately Invocated Function Expression)
-// Importante utilizar ; antes de la función autoinvocada, sino js piensa que require es una función
+// cjs => Hay que utilizar (;) antes de utilizar la IIFE
+// esm => Sin ;
 
 ;(
   async () => {

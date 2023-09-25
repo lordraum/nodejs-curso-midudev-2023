@@ -1,9 +1,4 @@
-// fs => filesystem => Es uno de los modulos más importantes en nodejs
-
 const fs = require('node:fs')
-
-// Información sobre archivos
-// De forma síncrona
 
 const stats = fs.statSync('./archivo.txt')
 
