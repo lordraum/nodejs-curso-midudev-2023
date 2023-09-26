@@ -182,6 +182,71 @@ console.log(process.env.PEPITO)
 // Ejecutar => PEPITO=hola node index => output = hola
 ```
 
+*Pendiente dotenv* ?
+
+## picocolors
+
+Permite cambiar el color a los outputs de la consola.
+
+```js
+// install npm i picocolors
+const pc = require('picocolors')
+
+const mensajes = ['Bien Hecho!!', 'Lo puedes hacer mejor']
+
+console.log(pc.red(mensajes[0]))
+console.log(pc.blue(mensajes[1]))
+
+```
+
+## standard (configuración eslint)
+
+Librería para utilizar es-lint
+
+```json
+// npm i standard -D
+
+// Al final del package.json
+
+"eslintConfig": {
+    "extends": "standard"
+  }
+
+// => Activar el format on save en VsCode
+```
+
+## HTTP Server
+
+`http.createServer()` --> Crea un servidor para procesar solicitudes http.
+
+- Parámetros --> Petición (req) --> Procesa la petición | respuesta (res) --> Procesa la respuesta
+- `res.end()` --> Envía la respuesta
+-  `res.listen()` --> Lanza el servidor en el puerto indicado
+
+```js
+const http = require('http')
+
+const PORT = 3001
+
+const server = http.createServer((req, res) => {
+  console.log('Petición recibida')
+  res.end('<h1>Hello world</h1>')
+})
+
+server.listen((3001), () => console.log(`Servidor lanzado en http://localhost:${PORT}`))
+```
+
+### Truco para que siempre utilice un puerto vacío
+
+Utilizar puerto cero (0), para acceder al puerto al que se conectó http --> `server.address().port`
+
+```js
+server.listen(0, () => console.log(`Servidor lanzado en http://localhost:${server.address().port}`))
+```
+    
+ 
+
+
 
 
 

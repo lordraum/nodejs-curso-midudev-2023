@@ -1,7 +1,6 @@
-// Picocolors => Permite cambiar el color a los outputs de la consola
+const pc = require('picocolors')
 
-// install npm i picocolors
-// utilizar
-// const pc = require('picocolors) => Es válido cualquier nombre
-// pc.color('string')
-// console.error(pc.red('text to change color'))
+const mensajes = ['Bien Hecho!!', 'Lo puedes hacer mejor']
+
+console.log(pc.red(mensajes[0]))
+console.log(pc.blue(mensajes[1]))
