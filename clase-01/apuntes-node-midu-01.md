@@ -152,7 +152,7 @@ console.log('memoria total', os.totalmem() / 1024 / 1024)
 console.log('tiempo encendido', os.uptime() / 60 / 60)
 ```
 
-## Proccess
+## Proccess / env
 
 Objeto global del proceso en ejecución, Contiene información, herramientas acerca del proceso global.
 
@@ -172,9 +172,6 @@ process.on('exit', () => {
 })
 ```
 
-### current working directory --> .cwd
-Muestra la carpeta desde dónde se ejecuta el proceso
-
 ### .env
 Variables de entorno
 ```js
@@ -182,7 +179,28 @@ console.log(process.env.PEPITO)
 // Ejecutar => PEPITO=hola node index => output = hola
 ```
 
-*Pendiente dotenv* ?
+### dotenv
+Librería para trabajar con las variables de entorno.
+
+- Carga las variables que deseemos en el proceso global `proccess.env`
+- Instalar `npm i dotenv`
+- Crear archivo .env en el root y agregar las variables --> Ejemplo `PORT=3000`
+- Importar y cargar `import dotenv from 'dotenv'` `dotenv.config()` (Al inicio)
+- Uso de las variables de entorno `procces.env.PORT`
+
+```js
+// Archivo .env
+// PORT=3000
+
+import dotenv from 'dotenv'
+dotenv.config()
+
+const PORT = process.env.PORT
+```
+
+### current working directory --> .cwd
+Muestra la carpeta desde dónde se ejecuta el proceso
+
 
 ## picocolors
 
