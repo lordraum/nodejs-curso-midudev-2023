@@ -59,20 +59,3 @@ app.delete('/movies/:id', (req, res) => {
 })
 
 app.listen(PORT, () => console.log(`Aplicación lanzada en http://localhost:${PORT}`))
-
-// Deploy
-
-// Inicio
-// fl0.com
-// Crear repositorio y clonar.
-// Crear script start.
-
-// Variables de entorno
-// Es importante que constantes como el puerto sean variables de entorno, que establecerá el servicio dónde se hara el despliegue
-// Las variables de entorno siempre son en mayúscula
-
-// Hacer commit y push
-
-// En Fl0
-// Deploy code with github
-// Escoger repositorio => Deploy

@@ -3,14 +3,6 @@ import { readJSON } from '../utils.js'
 import { randomUUID } from 'node:crypto'
 import { validateMovie, validatePartialMovie } from '../schemas/movies.js'
 
-// import movies from './movies.json' with { type: 'json'}
-// import movies from './movies.json' assert { type: 'json'}
-
-// fs import json
-/* import fs from 'node:fs'
-const movies = JSON.parse(fs.readFileSync('./movies.json', 'utf-8'))
-*/
-
 export const moviesRouter = Router()
 const movies = readJSON('./movies.json')
 
