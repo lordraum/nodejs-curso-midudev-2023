@@ -3,7 +3,6 @@ import { readJSON } from '../utils.js'
 const movies = readJSON('./movies.json')
 
 export class MovieModel {
-  //
   static async getAll ({ genre }) {
     if (genre) {
       return movies.filter(

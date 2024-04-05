@@ -220,4 +220,51 @@ moviesRouter.post('/', async (req, res) => {
 })
 ```
 
-<!-- https://youtu.be/ev3Yxva4wI4?list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7&t=3582 -->
+## Controladores
+
+Crear archivo en plugal al igual que en las rutas.
+
+- Crear clase que utilice métodos para menejar cada petición.
+- El controlador manejará las acciones necesarias para enviar la respuesta, a través de la ruta, a partir de la data que recibe del modelo.
+  - req, res
+  - validar data
+  - Procesar lo que se envía
+
+Un controlador puede manejar más de un modelo.
+
+El modelo hace que con solo una línea de código cambia la app de local a BBDD.
+
+```javascript
+moviesRouter.get('/', /* init */ async (req, res) => {
+  const { genre } = req.query
+  const movies = await MovieModel.getAll({ genre })
+  res.json(movies) /* end */
+})
+
+
+// Esta parte será la manejada en el controlador
+```
+
+### Cargar modelo
+
+`moviesRouter.get('/', MovieController.getAll)`
+
+## Validaciones en modelos vistas y controladores
+
+Las validaciones pueden realizarse en cada una de las tres capas segun lo que se requiera validar.
+
+Las validaciones en modelos y controlador son necesarias para el funcionamiento de la app, las de la vista son para mejorar la experiecnia del usuario.
+
+### Validaciones controlador
+
+Input del usuario
+
+### Validaciones vista
+
+Campos requeridos
+
+### Validaciones modelo
+
+- Validaciiones de la lógica del negocio como las validaciones de la BBDD
+- Verificar email, usuario existente
+- Verifica la seguridad y la coherencia de los datos
