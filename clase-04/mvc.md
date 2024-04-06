@@ -268,3 +268,9 @@ Campos requeridos
 - Validaciiones de la lógica del negocio como las validaciones de la BBDD
 - Verificar email, usuario existente
 - Verifica la seguridad y la coherencia de los datos
+
+## Introducción a Mongo DB Atlas
+
+Servicio que permite tener una BBDD MongoDB gratis.
+
+- Instalar dependiencia mongodb para controlar la BBDD  `pnpm i mongodb -E`
